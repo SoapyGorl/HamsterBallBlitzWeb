@@ -1,0 +1,50 @@
+.Displayed_username {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.0rem;
+    white-space: nowrap;
+}
+
+.LoginDiv {
+    width: 35vw;
+    left: 12.5vw;
+    padding: 2vw;
+    right: 36vw;
+    top: calc(64px + 2.5vw);
+    font-size: 1.3vw;
+    position: absolute;
+    border-radius: 3vw;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.InputClass {
+    width: 31vw;
+    font-size: 1.3vw;
+}
+
+.LoginButton {
+    width: 10vw;
+    font-size: 1.3vw;
+}
+
+.UsernameButton {
+    width: 10vw;
+    font-size: 1.3vw;
+}
+
+.PasswordButton {
+    width: 10vw;
+    font-size: 1.3vw;
+}
+
+.LoginSignUpHeader {
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.DontWrapPW {
+    white-space: nowrap
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hamster Ball Blitz</title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+         
+        ::-webkit-scrollbar-thumb {
+          background: #888; 
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+        </style>
+    
+
+    </head>
+
+    <body>
+
+        <div class = "HamsterBallBlitzDiv">
+          <img class="HamsterBallBlitz" src="{{url_for('static', filename='HamsterBallBlitz.png')}}"/>
+        </div>
+
+        <div class = "Vid-and-audio">
+          <video id="HamsterVid" autoplay loop controls muted playsinline style="pointer-events: none;">
+            <source src="{{url_for('static', filename='HamsterWebClip.mp4')}}" type=video/mp4>
+          </video>
+
+          <audio class="AudioController" controls autoplay loop controlsList="nodownload noplaybackrate">
+            <source src="{{url_for('static', filename='Forest_Theme.mp3')}}" type="audio/mpeg">
+          </audio>
+        </div>
+
+        <div class="Bottom_Button">
+          <button class="PlayNowButton" onclick=" window.open('https://soapygorl.itch.io/hamster-ball-blitz','_blank')">
+              PLAY NOW
+          </button>
+
+          <div class="Top_Button">
+            <button class="PlayNowButtonTop" onclick=" window.open('https://soapygorl.itch.io/hamster-ball-blitz','_blank')">
+              PLAY NOW
+            </button>
+
+            <div class="HamsterBallLeftDiv_TOP" onclick=" window.open('https://soapygorl.itch.io/hamster-ball-blitz','_blank')">
+              <img class="BallBackLeft_TOP" src="{{url_for('static', filename='BALL_BACK.png')}}"/>
+              <img class="BallFrontLeft_TOP" src="{{url_for('static', filename='BALL_FRONT.png')}}"/>
+              <img class="WalkRight2_TOP" src="{{url_for('static', filename='HamsterWalkingRight2.png')}}"/>
+            </div>
+
+            <div class="HamsterBallRightDiv_TOP" onclick=" window.open('https://soapygorl.itch.io/hamster-ball-blitz','_blank')">
+              <img class="BallBackRight_TOP" src="{{url_for('static', filename='BALL_BACK.png')}}"/>
+              <img class="BallFrontRight_TOP" src="{{url_for('static', filename='BALL_FRONT.png')}}"/>
+              <img class="WalkLeft2_TOP" src="{{url_for('static', filename='HamsterWalkingLeft2.png')}}"/>
+            </div>
+
+          </div>
+
+          <div class="HamsterBallLeftDiv" onclick=" window.open('https://soapygorl.itch.io/hamster-ball-blitz','_blank')">
+            <img class="BallBackLeft" src="{{url_for('static', filename='BALL_BACK.png')}}"/>
+            <img class="BallFrontLeft" src="{{url_for('static', filename='BALL_FRONT.png')}}"/>
+            <img class="WalkRight1" src="{{url_for('static', filename='HamsterWalkingRight1.png')}}"/>
+            <img class="WalkRight2" src="{{url_for('static', filename='HamsterWalkingRight2.png')}}"/>
+            <img class="WalkRight3" src="{{url_for('static', filename='HamsterWalkingRight3.png')}}"/>
+            <img class="WalkRight4" src="{{url_for('static', filename='HamsterWalkingRight4.png')}}"/>
+          </div>
+
+          <div class="HamsterBallRightDiv" onclick=" window.open('https://soapygorl.itch.io/hamster-ball-blitz','_blank')">
+            <img class="BallBackRight" src="{{url_for('static', filename='BALL_BACK.png')}}"/>
+            <img class="BallFrontRight" src="{{url_for('static', filename='BALL_FRONT.png')}}"/>
+            <img class="WalkLeft1" src="{{url_for('static', filename='HamsterWalkingLeft1.png')}}"/>
+            <img class="WalkLeft2" src="{{url_for('static', filename='HamsterWalkingLeft2.png')}}"/>
+            <img class="WalkLeft3" src="{{url_for('static', filename='HamsterWalkingLeft3.png')}}"/>
+            <img class="WalkLeft4" src="{{url_for('static', filename='HamsterWalkingLeft4.png')}}"/>
+          </div>
+        </div>
+
+        <div class="DescriptionOfGame">
+          <p class="DescriptionHeader">
+            Description:
+          </p>
+
+          <p>
+            Hamster Ball Blitz is a physics-based platformer where you play as a hamster in a ball with a water jet and a grappling hook. You can push off surfaces with your water jet and pull yourself toward surfaces with your grappling hook.
+            <br><br>
+            Explore an open world with a Forest, Anthill, Sewer, and 12 sub areas that improve your water jet and grappling hook.
+            <br><br>
+            Hamster Ball Blitz offers an in-game timer for speedrunning support.
+            <br><br>
+            A first playthrough should take 2-3 hours.
+            <br><br>
+            Hamster Ball Blitz is played with a keyboard and mouse and is only available on Windows. Your computer should have at least a 2 GHz processor and 3 GB RAM.
+          </p>
+          <br>
+          <p><a class="LinkToYT" href="https://www.youtube.com/@soapygorl" target="_blank" rel="noopener noreferrer">Visit my YouTube channel!</a></p>
+
+        </div>
+
+        <div class="ToolsUsed">
+          <p class="ToolsUsedHeader">
+            Tools used:
+          </p>
+
+          <p>
+            Python 3.11 — Sole programming language
+          <br><br>
+            Pygame — Collisions, timing, controls, sounds
+          <br><br>
+            OpenGL — Rendering visuals
+          <br><br>
+            Aseprite — Drawing sprites
+          <br><br>
+            MuseScore — Writing music
+          <br><br>
+            Audacity — Editing sound effects
+          </p>
+          <br><br>
+        </div>
+
+        <div class = "Comment-Section">
+          <p class = "Comment-Header">
+            Comments
+          </p>
+
+          {% if user.is_authenticated %}
+            <div class = "Write-Comment-Submit">
+              <form method = "POST">
+                <textarea 
+                  name = "note" 
+                  id = "note" 
+                  class = "form-control"></textarea>
+
+                <button type = "submit" class = "btn btn-primary post-comment">Post Comment</button>
+              </form>
+          {% endif %}
+              <br>
+              <ul class = "list-group list-group-flush" id="notes">
+                {% for note in All_Notes %}
+                <li class="list-group-item individual-comment">
+                  Comment written by <text class="CommentWriterName">{{ note.username }}</text>:
+                  <br>
+                  {{ note.data }}
+                  {% if user.is_authenticated %}
+                  {% if note.username == user.username %}
+                    <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  {% endif %}
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+        </div>
+
+    </body>
+
+</html>
+
+
+{% extends "base.html" %} {% block title %}Hamster Ball Blitz{% endblock %}
+
+{% block content %}
+<h1></h1>
+{% endblock %}
+

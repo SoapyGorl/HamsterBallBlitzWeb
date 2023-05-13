@@ -1,0 +1,464 @@
+.video-js .vjs-play-control {
+    display: none;}
+
+video::-webkit-media-controls-panel {
+display: none !important;
+opacity: 1 !important;}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-timeline {
+  display: none;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-toggle-closed-captions-button {
+  display: none;
+}
+
+.Vid-and-audio {
+  width: 75vw;
+  left: 12.5vw;
+  right: 12.5vw;
+  top: calc(64px + 2.5vw);
+  position: absolute;
+  z-index: -2;
+}
+
+.AudioController {
+    left: 1vw;
+    bottom: 1vw;
+    position: absolute;
+    width: 160px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#HamsterVid, #alternative {
+    width: 75vw;
+    object-fit: cover;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.HamsterBallBlitz {
+    width: 45vw;
+}
+
+.HamsterBallBlitzDiv {
+  width: 45vw;
+  left: 27.5vw;
+  right: 27.5vw;
+  top: calc(64px + 3.2vw);
+  position: absolute;
+  z-index: -0.9;
+}
+
+.PlayNowButton {
+    width: 28vw;
+    height: 7.5vw;
+    left: 36vw;
+    right: 36vw;
+    top: calc(64px + 36vw);
+    font-size: 2.3vw;
+    position: absolute;
+    border-radius: 3vw;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.Top_Button {
+    display: none
+}
+
+.Bottom_Button:hover .Top_Button{ 
+	display:block;
+}
+
+.PlayNowButtonTop {
+    width: 28vw;
+    height: 7.5vw;
+    left: 36vw;
+    right: 36vw;
+    top: calc(64px + 36vw);
+    font-size: 2.3vw;
+    position: absolute;
+    border-radius: 3vw;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+}
+
+.BallBackLeft {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.2;
+}
+
+.BallBackRight {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.2;
+}
+
+.BallBackLeft_TOP {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.2;
+}
+
+.BallBackRight_TOP {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.2;
+}
+
+.BallFrontLeft {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    animation: rotation_clockwise 2s infinite linear;
+}
+  
+  @keyframes rotation_clockwise {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.BallFrontRight {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    animation: rotation_counter_clockwise 2s infinite linear;
+}
+
+@keyframes rotation_counter_clockwise {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+.BallFrontLeft_TOP {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    animation: rotation_clockwise_top 0.6s infinite linear;
+}
+  
+  @keyframes rotation_clockwise_top {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.BallFrontRight_TOP {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    animation: rotation_counter_clockwise_top 0.6s infinite linear;
+}
+
+@keyframes rotation_counter_clockwise_top {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+.WalkRight1 {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: walk_right_animation1 .72s infinite;
+}
+
+@keyframes walk_right_animation1 {
+    0%    { opacity: 1; }
+    25%   { opacity: 1; }
+    25.01%{ opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+.WalkRight2 {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: walk_right_animation2 .72s infinite;
+}
+
+@keyframes walk_right_animation2 {
+    0%    { opacity: 0; }
+    24.99%{ opacity: 0; }
+    25%   { opacity: 1; }
+    50%   { opacity: 1; }
+    50.01%{ opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+.WalkRight3 {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: walk_right_animation3 .72s infinite;
+}
+
+@keyframes walk_right_animation3 {
+    0%    { opacity: 0; }
+    49.99%{ opacity: 0; }
+    50%   { opacity: 1; }
+    75%   { opacity: 1; }
+    75.01%{ opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+.WalkRight4 {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: walk_right_animation4 .72s infinite;
+}
+
+@keyframes walk_right_animation4 {
+    0%    { opacity: 0; }
+    74.99%{ opacity: 0; }
+    75%   { opacity: 1; }
+    100%  { opacity: 1; }
+  }
+
+.WalkLeft1 {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: walk_left_animation1 .72s infinite;
+}
+
+@keyframes walk_left_animation1 {
+    0%    { opacity: 1; }
+    25%   { opacity: 1; }
+    25.01%{ opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+.WalkLeft2 {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: walk_left_animation2 .72s infinite;
+}
+
+@keyframes walk_left_animation2 {
+    0%    { opacity: 0; }
+    24.99%{ opacity: 0; }
+    25%   { opacity: 1; }
+    50%   { opacity: 1; }
+    50.01%{ opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+.WalkLeft3 {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: walk_left_animation3 .72s infinite;
+}
+
+@keyframes walk_left_animation3 {
+    0%    { opacity: 0; }
+    49.99%{ opacity: 0; }
+    50%   { opacity: 1; }
+    75%   { opacity: 1; }
+    75.01%{ opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+.WalkLeft4 {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: walk_left_animation4 .72s infinite;
+}
+
+@keyframes walk_left_animation4 {
+    0%    { opacity: 0; }
+    74.99%{ opacity: 0; }
+    75%   { opacity: 1; }
+    100%  { opacity: 1; }
+  }
+
+.HamsterBallLeftDiv {
+    width: 5vw;
+    height: 5vw;
+    left: calc(36vw + 2vw);
+    right: 36vw;
+    top: calc(64px + 36vw + 1.25vw);
+    position: absolute;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.HamsterBallRightDiv {
+    width: 5vw;
+    height: 5vw;
+    left: calc(36vw + 28vw - 5vw - 2vw);
+    right: 36vw;
+    top: calc(64px + 36vw + 1.25vw);
+    position: absolute;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.HamsterBallLeftDiv_TOP {
+    width: 5vw;
+    height: 5vw;
+    left: calc(36vw + 2vw);
+    right: 36vw;
+    top: calc(64px + 36vw + 1.25vw);
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.HamsterBallRightDiv_TOP {
+    width: 5vw;
+    height: 5vw;
+    left: calc(36vw + 28vw - 5vw - 2vw);
+    right: 36vw;
+    top: calc(64px + 36vw + 1.25vw);
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.WalkRight2_TOP {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: rotation_clockwise_top 0.6s infinite linear;
+}
+
+.WalkLeft2_TOP {
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    z-index: -1.1;
+    animation: rotation_counter_clockwise_top 0.6s infinite linear;
+}
+
+.DescriptionHeader {
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.DescriptionOfGame {
+    width: 35vw;
+    height: 52vw;
+    left: 12.5vw;
+    padding: 2vw;
+    right: 36vw;
+    top: calc(64px + 46vw);
+    font-size: 1.3vw;
+    position: absolute;
+    border-radius: 3vw;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.ToolsUsedHeader {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.ToolsUsed {
+  width: 35vw;
+  height: 52vw;
+  padding: 2vw;
+  right: 12vw;
+  top: calc(64px + 46vw);
+  font-size: 1.3vw;
+  position: absolute;
+  border-radius: 3vw;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.LinkToYT {
+    padding-bottom: 2.5vw;
+    font-weight: bold;
+}
+
+.Comment-Section {
+  width: 75vw;
+  left: 12.5vw;
+  padding: 2vw;
+  right: 12.5vw;
+  top: calc(64px + 100vw);
+  font-size: 1.3vw;
+  position: absolute;
+  border-radius: 3vw;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.Comment-Header {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.btn-primary {
+  right: 0px;
+}
+
+.comment-input {
+  width: 71vw;
+  font-size: 1.3vw;
+  position: relative;
+}
+
+.post-comment {
+  width: 10vw;
+  left: 61vw;
+  top: 0.4vw;
+  font-size: 1.3vw;
+  position: relative;
+}
+
+.individual-comment {
+  word-wrap: break-word;
+}
+
+.CommentWriterName {
+  font-weight: bold;
+}
