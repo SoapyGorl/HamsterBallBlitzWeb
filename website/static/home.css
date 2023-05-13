@@ -34,7 +34,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
     left: 1vw;
     bottom: 1vw;
     position: absolute;
-    width: 160px;
+    width: 10vw;
     padding: 0px;
     margin: 0px;
 }
