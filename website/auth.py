@@ -13,7 +13,7 @@ def login():
         password = request.form.get('password')
         user = User.query.filter_by(username = username).first()
         if user:
-            if check_password_hash(user.password, password):
+            if user.password == password:
                 flash('You are logged in', category = 'success')
                 login_user(user, remember = True)
                 return redirect(url_for('views.home'))
@@ -46,7 +46,7 @@ def sign_up():
         elif len(password1) >= 150:
             flash('Password is too long', category = 'error')
         else:
-            new_user = User(username = username, password = generate_password_hash(password1, method = 'scrypt'))
+            new_user = User(username = username, password = password1)
             db.session.add(new_user)
             db.session.commit()
             flash('Account created!', category = 'success')
