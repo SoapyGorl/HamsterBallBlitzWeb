@@ -23,6 +23,6 @@ requests==2.28.1
 SQLAlchemy==1.4.42
 stripe==2.64.0
 urllib3==1.26.12
-Werkzeug==2.2.2
+Werkzeug==2.3.4
 xxhash==3.1.0
 zipp==3.10.0
