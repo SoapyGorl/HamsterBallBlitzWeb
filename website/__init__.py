@@ -18,7 +18,8 @@ def create_app():
     app.register_blueprint(auth, url_prefix='/')
     #
     from .models import User, Note
-    create_database(app)
+    #create_database(app)
+    print('Visitor')
     #
     login_manager = LoginManager()
     login_manager.login_view = 'views.home'
